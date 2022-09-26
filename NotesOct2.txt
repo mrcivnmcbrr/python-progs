@@ -1,0 +1,94 @@
+Two Primitive Loops
+1. while loop
+2. for loop
+while loop
+- can execute a set of statement(/s) as long as
+the condition is true
+syntax:
+while <condition>:
+  //statement(/s)
+  .
+  .
+  .
+Example:
+#MPLoop1
+#print numbers from 1 to 10
+ctr = 1
+while ctr <= 10:
+   print(ctr)
+   ctr = ctr + 1
+
+#MPLoop2
+#accept an input number (num) from the user,
+#print the number from 1 to num.
+num = int(input('Enter a number: '))
+ctr = 1
+while ctr <= num
+   print(ctr)
+   ctr = ctr + 1
+
+#MPLoop3
+#print all odd numbers from 1 to 20
+#Solution 1
+ctr = 1
+while ctr <= 20:
+   print(ctr)
+   ctr = ctr + 2
+#Solution 2
+ctr = 1
+while ctr <= 20:
+   if ctr%2 == 1:
+      print(ctr)
+   ctr += 1
+
+#MPLoop4
+#write a program that will output the sum of numbers
+#from 1-10
+ctr = 1
+sum = 0
+while ctr <= 10:
+    sum = sum + ctr
+    ctr += 1
+print(sum)
+
+#MPLoop5
+#write a program that will accept a number (num) and output
+#the square of the numbers from 1 to num
+ctr = 1
+num = int(input('Enter a Number: '))
+square = 0
+while ctr <= num:
+   square = ctr * ctr #ctr**2 
+   print (square)
+   ctr += 1
+
+for loop
+- in python, operates over a sequence or range
+syntax:
+for varName in range():
+#Example
+for ctr in range(5):
+  print(ctr)
+
+#MPLoop6
+#print all odd num from 1 - 20 using for loop
+for ctr in range(1,20,2):
+   print(ctr)
+
+#MPLoop7
+#print the sum of all even num from 1 to 20 using for loop
+sum = 0
+for ctr in range(2,21,2):
+   sum = sum + ctr
+print(sum)
+
+
+
+
+
+
+
+
+
+
+

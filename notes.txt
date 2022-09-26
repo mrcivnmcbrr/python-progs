@@ -1,0 +1,199 @@
+
+
+python programming language 
+
+    - programming language (compiler)
+    - high-level programming language (english like terms)
+    - intended to create web applications (server site programming langgauge)
+    - also desktop applications
+    - can also be used to create mobile applications 
+    
+What can Python do? 
+    - can create web applications, desktop applications, and mobile applications
+    - database applications 
+    - big data analytics 
+    - complex mathematical calculations
+    
+Why Python?
+    - can be run on different platforms (windows, macos, linux, Raspberry Pi)
+    - has simple syntax and uses english-like terms
+    - allows programmers to write codes with fewer lines compared to other programming language
+    - object-oriented programming, procedure oriented, functional way
+    
+Two Primitive Loops
+1. while loop
+2. for loop
+
+WHILE Loop
+- can execute a set of statement(/s) as long as
+the condition is true
+syntax:
+while <condition>:
+  //statement(/s)
+  .
+  .
+  .
+
+
+FOR Loop  
+    -operates over a sequence  - range
+
+    EX.
+        for varName in range (#identifies the number of loops*):
+    
+    for ctr in range (5): 
+        print(ctr)
+
+        
+Python Collection(Arrays)
+    4 Collection Data Types in Python
+    1. List - is a collection which is ordered and changeable.
+              Allows duplicate members.
+    2. Tuple - is a collection which is ordered and unchangeable.
+               Allows duplicate members.
+    3. Set - is a collection which is unordered and unindexed
+            No duplication is allowed.
+    4. Dictionary - is a collection which is also unordered, changeable and indexed.
+                    No duplication is allowed.
+     
+     
+What for is an array?
+    num = [1,2,3,4,5] *can store several values
+        index always starts with 0
+
+        Ex.
+            print(num[3]) 
+                -prints number 4 or the third value 
+            print(num[2])
+                -prints number 3
+    
+    List
+        -symbol used to denote list [ , ]
+    Ex.
+        thisList = [1,2,3,4,5]
+        fruitList = ['apple', 'banana', 'cherry']
+
+        print(thisList[4]) //outputs 5
+        print(fruitList[2]) //outputs cherry 
+
+    Negative Indexing (-) *counts backward
+        thisList = [1,2,3,4,5]
+        fruitList = ['apple', 'banana', 'cherry']
+    print(thisList[-1]) //outputs 5
+    print(fruitList[-2]) //outputs banana
+
+
+    RANGE of INDEXES
+        -where to start and where to end your range.
+        -allows you to specify the range of indexes by specifying where to start and end.     
+    Ex.
+        thisList = [1,2,3,4,5]
+        fruitList = ['apple', 'banana', 'cherry']
+
+        print(thisList[2:4]) //outputs 3, 4 *the last position is always minus 1
+        print(thisList[2:5]) //outputs 3, 4, 5
+        print(thisList[:4]) //outputs 1,2,3,4
+        print(fruitList[1:2]) //outputs banana & cherry
+    
+    RANGE of NEGATIVE INDEXES
+        -counts the range of indexes backwards 
+    Ex.
+        thisList = [1,2,3,4,5]
+        fruitList = ['apple', 'banana', 'cherry']
+        
+        print(thisList[-3:-1]) //outputs 3 & 4
+
+How to change the item value?
+    thisList[2] = 6
+
+    print(thisList) //outputs 1, 2, 6, 4, 5
+
+    LOOP THROUGH THE List
+        -use for loop
+    Ex.
+        thisList = [1,2,3,4,5]
+        fruitList = ['apple', 'banana', 'cherry']
+
+    for num in thisList:
+        print(num) //outputs 1, 2, 3, 4,5
+        print(num+5) outputs 6, 7, 8, 9, 10
+    
+    CHECK IF ITEM EXISTS ON THE LIST 
+        Ex.
+            fruitList = ['apple', 'banana', 'cherry']
+
+                if 'banana' in fruitList:
+                        print('Yes')
+                else:
+                        print('No')
+                //outputs Yes
+
+   
+   CHECK THE LIST LENGTH
+       Ex.
+        thisList = [1,2,3,4,5]
+        fruitList = ['apple', 'banana', 'cherry']
+
+        print(len(thisList))
+        print(len(fruitList))
+
+    ADD ITEMS
+        Ex.
+            fruitList.append('orange')
+            print(fruitList)
+            //outputs ['apple', 'banana', 'cherry', 'orange']
+
+    INSERT ITEM
+        Ex.
+            fruitList.insert(1, 'orange') *specify the position
+            print(fruitList)
+            //outputs ['apple', 'orange', 'banana', 'cherry']
+    
+    REMOVE ITEM
+        Ex.
+            fruitList.remove('banana')
+            print(fruitList)
+            //outputs ['apple', 'orange', 'cherry']
+    
+    JOIN TWO LIST
+        Ex. 
+        longList = fruitList + thisList
+        print(longList)
+        //outputs ['apple', 'banana', 'cherry', 'orange', 1, 2, 3, 4, 5]
+     
+
+
+    Tuples 
+        - collections in Python, represented with a (), ordered, unchangeable.
+    Ex.
+        fruitTuples = ('apple', 'banana', 'orange') *you can only add items at the last part, not in between*
+        
+        fruit = fruitTuples[1]
+
+    Sets 
+        -collections in Python, represented with a {}, unordered and unindexed.
+        -you cannot access items in a set using the index.
+        -once a set is created you cannot change its items, but you can add an item into a set.
+    Ex.
+        fruitSet = {'apple', 'banana', 'orange', 'grapes'}
+
+    
+    Dictionary
+        -collections in python, represented with {}, unordered, changeable and indexed.
+        - Dictionary should always have a key and an equivalent value.
+    Ex. 
+        carDictionary = {
+            "brand" : "Ford"
+            "model" : "Mustang"
+            "year" : 1964
+        }
+
+
+Strings in Python 
+    -a series of alphanumeric characters 
+Ex.
+    str = 'Hello World' 
+    str1 = '''Hello 
+            World!
+            Good 
+            Day'''
